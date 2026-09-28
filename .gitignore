@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# runtime database & logs
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.log
+*.log
+
+# macOS / editor
+.DS_Store
+*.swp
+
+# local backups & screenshots
+_backup/
+_shots/

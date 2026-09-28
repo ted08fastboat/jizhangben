@@ -1,0 +1,11 @@
+services:
+  jizhangben:
+    build: .
+    image: jizhangben:latest
+    container_name: jizhangben
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # 数据库持久化到宿主机 ./data，备份此目录即可
+      - ./data:/app/data
